@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Destinations</title>
+
+<link rel="stylesheet" href="destination.css">
+</head>
+<body>
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>Explore Destinations</h1>
+
+        <p>Find your perfect getaway destination</p>
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search Destination..."
+        >
+
+    </div>
+
+</section>
+
+<section class="filters">
+
+    <button class="active" data-filter="all">
+        All
+    </button>
+
+    <button data-filter="india">
+        🇮🇳 India
+    </button>
+
+    <button data-filter="beach">
+        🏖 Beach
+    </button>
+
+    <button data-filter="mountain">
+        🏔 Mountain
+    </button>
+
+    <button data-filter="city">
+        🌆 City
+    </button>
+
+    <button data-filter="adventure">
+        🚵 Adventure
+    </button>
+
+</section>
+
+<h2 class="section-title">
+    Popular Destinations
+</h2>
+
+<section
+class="destination-grid"
+id="destinationGrid">
+
+</section>
+
+<script src="destination.js"></script>
+
+</body>
+</html>

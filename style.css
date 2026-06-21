@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#F5FFFE;
+    color:#1B263B;
+}
+
+/* NAVBAR */
+
+nav{
+    position:absolute;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+
+nav button{
+    background:#FFD166;
+    border:none;
+    padding:12px 22px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
+    center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.35);
+}
+
+.hero-content{
+    position:relative;
+    text-align:center;
+    color:white;
+    width:80%;
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:1.2rem;
+}
+
+.search-box{
+    background:white;
+    padding:15px;
+    border-radius:60px;
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    box-shadow:0 10px 30px rgba(0,194,168,.3);
+}
+
+.search-box input,
+.search-box select{
+    border:none;
+    padding:15px;
+    outline:none;
+}
+
+.search-box button{
+    background:#00C2A8;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:30px;
+}
+
+/* SERVICES */
+
+.services{
+    padding:80px 8%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    text-align:center;
+    padding:40px;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:40px;
+    color:#00C2A8;
+    margin-bottom:15px;
+}
+
+/* DESTINATIONS */
+
+.popular{
+    padding:80px 8% 40px;
+}
+
+.popular h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.destination-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.destination-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.destination-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.destination-card h3{
+    padding:20px;
+}
+
+/* FEATURED */
+
+.featured{
+    padding:40px 8% 80px;
+}
+
+.featured h2{
+    margin-bottom:20px;
+}
+
+.trip-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.trip-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.trip-card span{
+    color:#00C2A8;
+    font-weight:bold;
+}
+
+/* STATS */
+
+.stats{
+    background:#00C2A8;
+    color:white;
+    padding:70px;
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+}
+
+.stats h2{
+    font-size:40px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+    padding:80px 8%;
+}
+
+.testimonials h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.review{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.newsletter h2{
+    margin-bottom:15px;
+}
+
+.newsletter input{
+    padding:15px;
+    width:300px;
+    border-radius:30px;
+    border:1px solid #ddd;
+}
+
+.newsletter button{
+    padding:15px 25px;
+    background:#FFD166;
+    border:none;
+    border-radius:30px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1B263B;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+.destination-card,
+.trip-card,
+.review,
+.card{
+    transition:all 0.3s ease;
+}
+
+.destination-card:hover,
+.trip-card:hover,
+.review:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
