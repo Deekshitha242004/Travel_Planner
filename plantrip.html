@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Plan Your Trip</title>
+
+<link rel="stylesheet" href="plantrip.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+
+<section class="trip-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>Plan Your Dream Trip</h1>
+
+        <p>
+            Create a personalized travel experience in minutes
+        </p>
+
+    </div>
+
+</section>
+
+<!-- PLANNER -->
+
+<section class="planner-container">
+
+    <div class="planner-card">
+
+        <h2>Trip Planner</h2>
+
+        <form id="tripForm">
+
+            <!-- PLAN BY -->
+
+            <div class="form-group">
+
+                <label>Plan By</label>
+
+                <select id="tripType">
+
+                    <option value="">
+                        Select Option
+                    </option>
+
+                    <option value="destination">
+                        Destination
+                    </option>
+
+                    <option value="package">
+                        Package
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- DESTINATION / PACKAGE -->
+
+            <div class="form-group">
+
+                <label>Destination / Package</label>
+
+                <select id="tripSelect">
+
+                    <option value="">
+                        Select Destination / Package
+                    </option>
+
+                </select>
+
+                <small
+                id="tripError"
+                class="error-msg">
+
+                </small>
+
+            </div>
+
+            <!-- TRAVELERS -->
+
+            <div class="form-group">
+
+                <label>Travelers</label>
+
+                <select id="travelers">
+
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Persons</option>
+                    <option value="3">3 Persons</option>
+                    <option value="4">4 Persons</option>
+                    <option value="5">5 Persons</option>
+                    <option value="6">6 Persons</option>
+                    <option value="8">8 Persons</option>
+                    <option value="10">10 Persons</option>
+
+                </select>
+
+            </div>
+
+            <!-- DAYS -->
+
+            <div class="form-group">
+
+                <label>Number of Days</label>
+
+                <select id="days">
+
+                    <option value="1">1 Day</option>
+                    <option value="3">3 Days</option>
+                    <option value="5">5 Days</option>
+                    <option value="7">7 Days</option>
+                    <option value="10">10 Days</option>
+                    <option value="15">15 Days</option>
+
+                </select>
+
+            </div>
+
+            <!-- HOTEL -->
+
+            <div class="form-group">
+
+                <label>Hotel Type</label>
+
+                <select id="hotel">
+
+                    <option value="1000">
+                        Budget Hotel
+                    </option>
+
+                    <option value="3000">
+                        3 Star Hotel
+                    </option>
+
+                    <option value="5000">
+                        4 Star Hotel
+                    </option>
+
+                    <option value="8000">
+                        5 Star Hotel
+                    </option>
+
+                    <option value="15000">
+                        Luxury Resort
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- FOOD -->
+
+            <div class="form-group">
+
+                <label>Food Plan</label>
+
+                <select id="food">
+
+                    <option value="500">
+                        Breakfast Only
+                    </option>
+
+                    <option value="1000">
+                        Breakfast + Lunch
+                    </option>
+
+                    <option value="1500">
+                        All Meals
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- TRANSPORT -->
+
+            <div class="form-group">
+
+                <label>Transport</label>
+
+                <select id="transport">
+
+                    <option value="1000">
+                        Bus
+                    </option>
+
+                    <option value="3000">
+                        Train
+                    </option>
+
+                    <option value="8000">
+                        Flight Economy
+                    </option>
+
+                    <option value="15000">
+                        Flight Business
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- ACTIVITIES -->
+
+            <div class="form-group">
+
+                <label>Activities</label>
+
+                <select id="activity">
+
+                    <option value="0">
+                        None
+                    </option>
+
+                    <option value="1000">
+                        Sightseeing
+                    </option>
+
+                    <option value="3000">
+                        Adventure Sports
+                    </option>
+
+                    <option value="5000">
+                        Luxury Cruise
+                    </option>
+
+                    <option value="7000">
+                        Scuba Diving
+                    </option>
+
+                    <option value="9000">
+                        Hot Air Balloon
+                    </option>
+
+                    <option value="6000">
+                        Trekking
+                    </option>
+
+                    <option value="4500">
+                        River Rafting
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- BUTTONS -->
+
+            <div class="btn-group">
+
+                <button
+                type="button"
+                id="calculateBtn">
+
+                    Calculate Cost
+
+                </button>
+
+                <button
+                type="button"
+                id="bookBtn">
+
+                    Book Trip
+
+                </button>
+
+            </div>
+
+        </form>
+
+        <!-- RESULT -->
+
+        <div id="tripResult">
+
+    <h3>
+        Total Estimated Cost
+    </h3>
+
+    <h1 id="totalCost">
+        ₹0
+    </h1>
+
+    <div id="bookingMessage"></div>
+
+</div>
+
+    </div>
+
+</section>
+
+<script src="plantrip.js"></script>
+
+</body>
+</html>
