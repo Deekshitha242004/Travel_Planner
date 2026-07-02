@@ -10,13 +10,86 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    
+<!-- SIDEBAR -->
 
-    <!-- Navbar -->
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+        <h2>Travel Planner</h2>
+        <i class="fa-solid fa-xmark close-sidebar" id="closeSidebar"></i>
+    </div>
+
+    <!-- Navigation -->
+    <a href="index.html">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="destination.html">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Destinations</span>
+    </a>
+
+    <a href="packages.html">
+        <i class="fa-solid fa-suitcase"></i>
+        <span>Packages</span>
+    </a>
+
+    <a href="reviews.html">
+        <i class="fa-solid fa-star"></i>
+        <span>Reviews</span>
+    </a>
+
+    <a href="contact.html">
+        <i class="fa-solid fa-phone"></i>
+        <span>Contact</span>
+    </a>
+
+    <hr>
+
+    <!-- User -->
+    <a href="myaccount.html">
+        <i class="fa-solid fa-user"></i>
+        <span>My Account</span>
+    </a>
+
+    <a href="savedtrips.html">
+        <i class="fa-solid fa-heart"></i>
+        <span>Saved Trips</span>
+    </a>
+
+    <a href="bookedtrips.html">
+        <i class="fa-solid fa-ticket"></i>
+        <span>My Bookings</span>
+    </a>
+
+    <a href="plantrip.html">
+        <i class="fa-solid fa-plane"></i>
+        <span>Plan Trip</span>
+    </a>
+
+    <a href="login.html">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span>Logout</span>
+    </a>
+
+</div>
+
+ <!-- Navbar -->
     <nav>
+        <div class="nav-left">
+         <!-- HAMBURGER -->
+        <div class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
         <div class="logo">
             <i class="fa-solid fa-earth-americas"></i>
             TravelMate
         </div>
+
+    </div>
 
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -215,6 +288,6 @@
         <p>Explore the world with confidence.</p>
 
     </footer>
-
+ <script src="main.js"></script>
 </body>
 </html>
