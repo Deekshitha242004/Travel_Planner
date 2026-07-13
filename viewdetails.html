@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>View Details | TravelMate</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="viewdetails.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+        <h2>Travel Planner</h2>
+
+        <i class="fa-solid fa-xmark close-sidebar"
+        id="closeSidebar"></i>
+
+    </div>
+
+    <a href="myaccount.html">
+        <i class="fa-solid fa-user"></i>
+        <span>My Account</span>
+    </a>
+
+    <a href="savedtrips.html">
+        <i class="fa-solid fa-heart"></i>
+        <span>Saved Trips</span>
+    </a>
+
+    <a href="bookedtrips.html">
+        <i class="fa-solid fa-ticket"></i>
+        <span>My Bookings</span>
+    </a>
+
+    <a href="plantrip.html">
+        <i class="fa-solid fa-plane"></i>
+        <span>Plan Trip</span>
+    </a>
+
+    <a href="login.html">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span>Logout</span>
+    </a>
+
+</div>
+
+<div class="sidebar-overlay" id="overlay"></div>
+
+<!-- Navbar -->
+
+<nav>
+
+    <div class="nav-left">
+
+        <div class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="logo">
+            <i class="fa-solid fa-earth-americas"></i>
+            TravelMate
+        </div>
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <a href="plantrip.html">
+        <button>Plan Trip</button>
+    </a>
+
+</nav>
+
+<!-- DETAILS -->
+
+<section class="details-container">
+
+    <div class="details-top">
+
+        <!-- IMAGE -->
+
+        <div class="image-card">
+
+            <img
+            id="detailImage"
+            src=""
+            alt="Travel Image">
+
+            <button
+            class="save-btn"
+            id="saveBtn">
+
+                🤍
+
+            </button>
+
+            <div class="rating-badge">
+
+                ⭐
+                <span id="detailRating"></span>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMATION -->
+
+        <div class="details-info">
+
+            <h1 id="detailName"></h1>
+
+            <p class="location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span id="detailLocation"></span>
+
+            </p>
+
+            <p class="duration">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <span id="detailDuration"></span>
+
+            </p>
+
+            <h2
+            class="price"
+            id="detailPrice"></h2>
+
+            <button
+            class="plan-btn"
+            id="planBtn">
+
+                Plan Trip
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- OVERVIEW -->
+
+    <div class="detail-card">
+
+        <h2>📖 Overview</h2>
+
+        <p id="detailOverview"></p>
+
+    </div>
+
+    <!-- PLACES -->
+
+    <div class="detail-card">
+
+        <h2>📍 Places Covered</h2>
+
+        <ul id="placesList"></ul>
+
+    </div>
+
+    <!-- ACTIVITIES -->
+
+    <div class="detail-card">
+
+        <h2>🎯 Activities</h2>
+
+        <ul id="activitiesList"></ul>
+
+    </div>
+
+    <!-- WEATHER -->
+
+    <div class="detail-card">
+
+        <h2>🌤 Best Time To Visit</h2>
+
+        <p id="detailWeather"></p>
+
+    </div>
+
+    <!-- TRAVEL TIPS -->
+
+    <div class="detail-card">
+
+        <h2>🧳 Travel Tips</h2>
+
+        <ul id="tipsList"></ul>
+
+    </div>
+
+    <!-- BACK BUTTON -->
+
+    <div class="back-section">
+
+        <button
+        class="back-btn"
+        id="backBtn">
+
+            ← Back
+
+        </button>
+
+    </div>
+
+</section>
+
+<script src="packagesdata.js"></script>
+<script src="destinationsdata.js"></script>
+<script src="viewdetails.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

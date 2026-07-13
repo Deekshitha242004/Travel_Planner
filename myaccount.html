@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Account | TravelMate</title>
+
+<link rel="stylesheet" href="myaccount.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>My Account</h1>
+
+    <p class="welcome">
+        Welcome back 👋
+    </p>
+
+    <!-- PROFILE -->
+
+    <div class="profile-card">
+
+        <div class="profile-image">
+
+    <span id="profileLetter"></span>
+
+</div>
+
+        <h2 id="userName">User Name</h2>
+
+        <p id="userEmail">user@gmail.com</p>
+
+        <span class="member">
+            Member Since 2026
+        </span>
+
+    </div>
+
+    <!-- QUICK ACTIONS -->
+
+    <h3>Quick Actions</h3>
+
+    <div class="actions">
+
+        <a href="savedtrips.html" class="action-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <span>Saved Trips</span>
+
+        </a>
+
+        <a href="bookedtrips.html" class="action-card">
+
+            <i class="fa-solid fa-ticket"></i>
+
+            <span>Bookings</span>
+
+        </a>
+
+        <a href="plantrip.html" class="action-card">
+
+            <i class="fa-solid fa-plane"></i>
+
+            <span>Plan Trip</span>
+
+        </a>
+
+        <a href="#" onclick="logout()" class="action-card">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>Logout</span>
+
+        </a>
+
+    </div>
+
+</div>
+
+<script src="auth.js"></script>
+
+<script src="myaccount.js"></script>
+
+</body>
+
+</html>

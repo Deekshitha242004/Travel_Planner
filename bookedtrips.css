@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+
+    background:#F5FFFE;
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:60px 20px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    color:#0f766e;
+
+    font-size:42px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#666;
+
+    margin:12px 0 45px;
+
+    font-size:18px;
+
+}
+
+.booking-container{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.empty-booking{
+
+    width:100%;
+    max-width:520px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.empty-booking i{
+
+    font-size:70px;
+
+    color:#14b8a6;
+
+    margin-bottom:20px;
+
+}
+
+.empty-booking h2{
+
+    font-size:30px;
+
+    color:#1B263B;
+
+    margin-bottom:15px;
+
+}
+
+.empty-booking p{
+
+    color:#6b7280;
+
+    line-height:1.6;
+
+    margin-bottom:30px;
+
+}
+
+.explore-btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:#14b8a6;
+
+    color:#fff;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.explore-btn:hover{
+
+    background:#0f766e;
+
+}
+
+@media(max-width:768px){
+
+h1{
+
+    font-size:34px;
+
+}
+
+.empty-booking{
+
+    padding:35px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+    padding:40px 15px;
+
+}
+
+h1{
+
+    font-size:28px;
+
+}
+
+.subtitle{
+
+    font-size:15px;
+
+}
+
+.empty-booking{
+
+    padding:25px;
+
+}
+
+.empty-booking i{
+
+    font-size:55px;
+
+}
+
+.empty-booking h2{
+
+    font-size:24px;
+
+}
+
+}
